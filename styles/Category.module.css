@@ -1,0 +1,25 @@
+.kategoriwrap {
+  padding: 10px;
+  overflow: auto;
+  margin-bottom: 20px;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.kategoriwrap::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.kategorinya {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.kategorinya a {
+  display: block;
+  margin-right: 10px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid;
+}

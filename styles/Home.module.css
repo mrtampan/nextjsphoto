@@ -2,6 +2,29 @@
   padding: 0 2rem;
 }
 
+.wrapp {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  margin: 0 auto;
+  max-width: 480px;
+  background-color: #fff;
+  z-index: 100000000;
+}
+
+.imagegallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+}
+
+.imagegallery img {
+  height: 6.25rem;
+  width: 6.25rem;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
