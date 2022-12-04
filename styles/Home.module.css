@@ -8,7 +8,6 @@
   margin: 0 auto;
   max-width: 480px;
   background-color: #fff;
-  z-index: 100000000;
 }
 
 .imagegallery {
@@ -135,6 +134,24 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .wrapp {
+    height: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapp {
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapp {
+    height: auto;
   }
 }
 

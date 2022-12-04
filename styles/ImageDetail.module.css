@@ -2,3 +2,28 @@
   max-width: 480px;
   padding: 10px;
 }
+.gambardiv {
+  text-align: center;
+  justify-content: center;
+}
+
+@media (min-width: 425px) {
+  .gambar {
+    max-width: 425px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 375px) {
+  .gambar {
+    max-width: 375px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 320px) {
+  .gambar {
+    max-width: 320px;
+    padding: 10px;
+  }
+}
