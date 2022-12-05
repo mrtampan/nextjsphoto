@@ -10,8 +10,8 @@ import { server } from '../../config';
 export default function CategoryData({ allData, cat }) {
   return (
     <div className={styles.wrapp}>
-      <Header></Header>
-      <br></br>
+      {/* <Header></Header>
+      <br></br> */}
       <Category catparam={cat}></Category>
       <br></br>
       <div className={styles.imagegallery}>

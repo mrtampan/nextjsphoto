@@ -10,8 +10,8 @@ import { server } from '../config';
 export default function Home({ allData }) {
   return (
     <div className={styles.wrapp}>
-      <Header></Header>
-      <br></br>
+      {/* <Header></Header>
+      <br></br> */}
       <Category></Category>
       <div className={styles.imagegallery}>
         {allData.data.map((data) => {

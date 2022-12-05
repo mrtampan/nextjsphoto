@@ -8,8 +8,8 @@ export default function Custom404() {
   return (
     <div>
       <div className={styles.wrapp}>
-        <Header></Header>
-        <br></br>
+        {/* <Header></Header>
+        <br></br> */}
         <h2 className="title-not-found">Oopsss.....</h2>
         <h3 className="title-not-found">Halaman yang anda cari tidak ada</h3>
         <br></br>

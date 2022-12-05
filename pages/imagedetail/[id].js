@@ -7,8 +7,8 @@ export default function ImageDetail({ dataaja }) {
   return (
     <div>
       <div className={homestyles.wrapp}>
-        <Header></Header>
-        <br></br>
+        {/* <Header></Header>
+        <br></br> */}
         <Category></Category>
         <div className={styles.gambardiv}>
           <img className={styles.gambar} alt="foto" src={dataaja.img}></img>
