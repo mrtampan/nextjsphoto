@@ -3,11 +3,37 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Header from '../component/layout/header';
 import Category from '../component/layout/category';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router'
 import Link from 'next/link';
 import { server } from '../config';
 
+
 export default function Home({ allData }) {
+
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const router = useRouter();
+  useEffect(()=> {
+    const onScroll = () => {
+      if((window.pageYOffset <= 0) && (scrollPosition > 0))
+      {
+        router.reload('/')
+
+      }
+      setScrollPosition(window.pageYOffset);
+    };
+
+    window.removeEventListener('touchmove', onScroll);
+    window.addEventListener('touchmove', onScroll);
+
+    return () => window.removeEventListener('touchmove', onScroll);
+    
+    
+  })
+  
+
+
   return (
     <div className={styles.wrapp}>
       {/* <Header></Header>
